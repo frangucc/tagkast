@@ -22,6 +22,10 @@
   width: 990px;
 }
 
+body {
+  background: url(/assets/bg-grained.jpg);
+}
+
 #main-header {
   height: 100px;
   position: relative;
@@ -309,6 +313,60 @@
       padding-left: 70px;
       background: url(/assets/how-amplify.png) no-repeat;
       margin-right: 0;
+    }
+  }
+}
+
+/**
+ * Why
+ */
+#why-reasons {
+  text-align: center;
+  margin-bottom: 50px;
+
+  h1 {
+    text-indent: -9999px;
+    background: url(/assets/we-ve-got-over-a-billion-reasons.png);
+    height: 62px;
+    width: 866px;
+    margin: 50px auto 20px;
+  }
+}
+
+#why-blocks {
+  float: left;
+  padding-bottom: 80px;
+
+  section {
+    float: left;
+
+    h1, p {
+      font-size: 15px;
+      line-height: 25px;
+      margin-right: 20px;
+    }
+
+    h1 {
+      margin-top: -8px;
+    }
+
+    &.influences {
+      width: 270px;
+      background: url(/assets/how-snap.png) no-repeat;
+      padding-left: 60px;
+    }
+
+    &.emotion {
+      width: 280px;
+      background: url(/assets/how-tap.png) no-repeat;
+      padding-left: 50px;
+    }
+
+    &.behaviour {
+      width: 260px;
+      background: url(/assets/how-amplify.png) no-repeat;
+      margin-right: 0;
+      padding-left: 70px;
     }
   }
 }
