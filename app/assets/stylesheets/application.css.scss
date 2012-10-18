@@ -452,3 +452,40 @@ body {
   }
 
 }
+
+/**
+ * Clients
+ */
+#clients-title {
+  text-indent: -9999px;
+  background: url(/assets/we-started-with-a-whisper.png);
+  width: 985px;
+  height: 47px;
+  margin: 50px auto 20px;
+}
+
+#clients-left {
+  float: left;
+  width: 424px;
+  margin-left: 50px;
+  margin-bottom: 60px;
+
+  img {
+    display: block;
+    margin-bottom: 30px;
+  }
+  h1, p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+#clients-right {
+  float: right;
+  width: 418px;
+  margin-right: 50px;
+  margin-bottom: 60px;
+}

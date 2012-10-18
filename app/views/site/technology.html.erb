@@ -7,23 +7,23 @@
       </hgroup>
       <ul class="handles">
         <li>
-          <%= image_tag '' %>
+          <%= image_tag 'tech-item1-small.png' %>
           <a href="#content1">Camera</a>
         </li>
         <li>
-          <%= image_tag '' %>
+          <%= image_tag 'tech-item2-small.png' %>
           <a href="#content2">Transmit</a>
         </li>
         <li>
-          <%= image_tag '' %>
+          <%= image_tag 'tech-item3-small.png' %>
           <a href="#content3">Hotspot</a>
         </li>
         <li>
-          <%= image_tag '' %>
+          <%= image_tag 'tech-item4-small.png' %>
           <a href="#content4">Tablet</a>
         </li>
         <li>
-          <%= image_tag '' %>
+          <%= image_tag 'tech-item5-small.png' %>
           <a href="#content5">Rigs</a>
         </li>
       </ul>
@@ -84,6 +84,8 @@
 
     contents.hide();
     $($(this).find('a').attr('href')).show();
+    
+    return false;
   });
 
   lis.filter(':eq(0)').click();
