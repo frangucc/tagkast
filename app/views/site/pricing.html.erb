@@ -1,1 +1,46 @@
-pricing.html.erb
+<div class="full">
+  <div class="center">
+
+    <div id="pricing-form">
+      <h1>Contact us for pricing</h1>
+      <form>
+
+        <input class="name" />
+        <input class="email" />
+        <input class="what" />
+        <input class="submit" type="submit" value="Submit" />
+
+      </form>
+    </div>
+
+    <div id="pricing-info">
+      <section class="location">
+        <h1>GoFoto Headquarters</h1>
+        <p>600 W. Chicago Ave.</p>
+        <p>Chicago IL, 60654</p>
+        <p>312-806-7979</p>
+      </section>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  $('#pricing-form input')
+    .focus(function () {
+      $(this).addClass('focus');
+    })
+    .blur(function () {
+      if (!$(this).val()) {
+        $(this).removeClass('focus');
+      }
+    })
+    .each(function () {
+      if (!$(this).val()) {
+        $(this).removeClass('focus');
+      }
+      else {
+        $(this).addClass('focus');
+      }
+    });
+</script>
