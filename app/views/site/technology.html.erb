@@ -1,1 +1,90 @@
-technologies.html.erb
+<div class="full">
+  <div class="center">
+
+    <section id="tech-banner">
+      <hgroup>
+        <h1>Turn-key-tech-nology</h1>
+      </hgroup>
+      <ul class="handles">
+        <li>
+          <%= image_tag '' %>
+          <a href="#content1">Camera</a>
+        </li>
+        <li>
+          <%= image_tag '' %>
+          <a href="#content2">Transmit</a>
+        </li>
+        <li>
+          <%= image_tag '' %>
+          <a href="#content3">Hotspot</a>
+        </li>
+        <li>
+          <%= image_tag '' %>
+          <a href="#content4">Tablet</a>
+        </li>
+        <li>
+          <%= image_tag '' %>
+          <a href="#content5">Rigs</a>
+        </li>
+      </ul>
+      <div class="contents">
+        <section id="content1">
+          <%= image_tag 'tech-item1.png' %>
+          <h1>Eye-Fi GoFoto Memory Card</h1>
+          <p>Use GoFoto technology with any DSLR camera or cameras that accept a standard memory card. Use the Eye-Fi Card from GoFoto to connect to the hotspot and Android device.</p>
+        </section>
+        <section id="content2">
+          <%= image_tag 'tech-item1.png' %>
+          <h1>Eye-Fi GoFoto Memory Card</h1>
+          <p>Use GoFoto technology with any DSLR camera or cameras that accept a standard memory card. Use the Eye-Fi Card from GoFoto to connect to the hotspot and Android device.</p>
+        </section>
+        <section id="content3">
+          <%= image_tag 'tech-item1.png' %>
+          <h1>Eye-Fi GoFoto Memory Card</h1>
+          <p>Use GoFoto technology with any DSLR camera or cameras that accept a standard memory card. Use the Eye-Fi Card from GoFoto to connect to the hotspot and Android device.</p>
+        </section>
+        <section id="content4">
+          <%= image_tag 'tech-item1.png' %>
+          <h1>Eye-Fi GoFoto Memory Card</h1>
+          <p>Use GoFoto technology with any DSLR camera or cameras that accept a standard memory card. Use the Eye-Fi Card from GoFoto to connect to the hotspot and Android device.</p>
+        </section>
+        <section id="content5">
+          <%= image_tag 'tech-item1.png' %>
+          <h1>Eye-Fi GoFoto Memory Card</h1>
+          <p>Use GoFoto technology with any DSLR camera or cameras that accept a standard memory card. Use the Eye-Fi Card from GoFoto to connect to the hotspot and Android device.</p>
+        </section>
+      </div>
+    </section>
+
+    <div id="why-blocks">
+      <section class="influences">
+        <h1>Create the Influences</h1>
+        <p>Turn your patrons into influencers within the community. Their endorsements are a recommendation, testimonial and voucher all in one.</p>
+      </section>
+      <section class="emotion">
+        <h1>Own the Emotion</h1>
+        <p>Associate your identity with the fabulous moments captured in thousands of classic photos - be the inspiration.</p>
+      </section>
+      <section class="behaviour">
+        <h1>Drive Behaviour</h1>
+        <p>Use the data harvested to nudge your demographic through the consumer journey and build your brand ambassadorship.</p>
+      </section>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  var lis = $('#tech-banner .handles li')
+    , contents = $('#tech-banner .contents section');
+  
+  lis.click(function () {
+    lis.removeClass('active');
+    $(this).addClass('active');
+
+    contents.hide();
+    $($(this).find('a').attr('href')).show();
+  });
+
+  lis.filter(':eq(0)').click();
+</script>

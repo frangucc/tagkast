@@ -370,3 +370,85 @@ body {
     }
   }
 }
+
+/**
+ * Technology
+ */
+#tech-banner {
+
+  hgroup h1 {
+    text-indent: -9999px;
+    background: url(/assets/turn-key-tech-nology.png);
+    width: 602px;
+    height: 68px;
+    margin: 50px auto 30px;
+  }
+
+  ul.handles {
+    float: left;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+
+    li {
+      float: left;
+      width: 150px;
+      height: 90px;
+      list-style: none;
+      padding-top: 20px;
+      cursor: pointer;
+
+      img {
+        display: block;
+        margin: 0 auto 10px;
+      }
+      a {
+        font-size: 13px;
+        color: #000;
+        text-decoration: none;
+        display: block;
+        line-height: 16px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      &.active {
+        background: #2e2e2e url(/assets/tech-arrow-up.png) no-repeat center bottom;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  div.contents {
+    float: left;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+
+    section {
+      float: left;
+      padding: 50px;
+
+      img {
+        float: left;
+      }
+      h1, p {
+        margin-left: 340px;
+      }
+      h1 {
+        padding-top: 7px;
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+  }
+
+}
