@@ -46,14 +46,24 @@ body {
       float: right;
       margin-left: 40px;
 
-      &.pricing a {
-        background: #ff6833;
-        border-radius: 3px;
-        color: #fff;
-        padding: 0 22px;
-        font-size: 13px;
-        font-weight: bold;
-        text-transform: uppercase;
+      &.pricing {
+        a {
+          background: #ff6833;
+          border-radius: 3px;
+          color: #fff !important;
+          padding: 0 22px;
+          font-size: 13px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        &.active a {
+          text-shadow: 1px 1px 0 #dd2200;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      &.active a {
+        color: #ff6833;
       }
 
       a {

@@ -15,11 +15,16 @@
 
       <nav>
         <ul>
-          <li class="pricing"><%= link_to 'Pricing', pricing_path %></li>
-          <li class="clients"><%= link_to 'Clients', clients_path %></li>
-          <li class="technology"><%= link_to 'Technology', technology_path %></li>
-          <li class="why"><%= link_to 'Why Social Endorsement', why_social_endorsement_path %></li>
-          <li class="how"><%= link_to 'How It Works', how_it_works_path %></li>
+          <li class="pricing<% if params[:action] == 'pricing' %> active<% end %>">
+            <%= link_to 'Pricing', pricing_path %></li>
+          <li class="clients<% if params[:action] == 'clients' %> active<% end %>">
+            <%= link_to 'Clients', clients_path %></li>
+          <li class="technology<% if params[:action] == 'technology' %> active<% end %>">
+            <%= link_to 'Technology', technology_path %></li>
+          <li class="why<% if params[:action] == 'why_social_endorsement' %> active<% end %>">
+            <%= link_to 'Why Social Endorsement', why_social_endorsement_path %></li>
+          <li class="how<% if params[:action] == 'how_it_works' %> active<% end %>">
+            <%= link_to 'How It Works', how_it_works_path %></li>
         </ul>
       </nav>
 
