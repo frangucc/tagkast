@@ -8,7 +8,25 @@
 </head>
 <body>
 
-<%= yield %>
+  <div class="full">
+    <header id="main-header" class="center">
+
+      <%= link_to image_tag('logo.png', :alt => 'GoFoto Logo'), root_path, :title => 'GoFoto Home', :id => 'logo' %>
+
+      <nav>
+        <ul>
+          <li class="pricing"><%= link_to 'Pricing', pricing_path %></li>
+          <li class="clients"><%= link_to 'Clients', clients_path %></li>
+          <li class="technology"><%= link_to 'Technology', technology_path %></li>
+          <li class="why"><%= link_to 'Why Social Endorsement', why_social_endorsement_path %></li>
+          <li class="how"><%= link_to 'How It Works', how_it_works_path %></li>
+        </ul>
+      </nav>
+
+    </header>
+  </div>
+
+  <%= yield %>
 
 </body>
 </html>

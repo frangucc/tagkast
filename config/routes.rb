@@ -1,4 +1,13 @@
 Gofoto::Application.routes.draw do
+
+  match 'how-it-works' => 'site#how_it_works', :as => 'how_it_works'
+  match 'why-social-endorsement' => 'site#why_social_endorsement', :as => 'why_social_endorsement'
+  match 'technology' => 'site#technology', :as => 'technology'
+  match 'clients' => 'site#clients'
+  match 'pricing' => 'site#pricing'
+
+  root :to => 'site#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

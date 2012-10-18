@@ -1,0 +1,229 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+.full {
+  float: left;
+  width: 100%;
+}
+.center {
+  margin: auto;
+  width: 990px;
+}
+
+#main-header {
+  height: 100px;
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
+  #logo {
+    float: left;
+    padding: 27px 0 0 35px;
+  }
+
+  nav {
+    float: right;
+    padding: 35px 30px 0 0;
+
+    li {
+      float: right;
+      margin-left: 40px;
+
+      &.pricing a {
+        background: #ff6833;
+        border-radius: 3px;
+        color: #fff;
+        padding: 0 22px;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      a {
+        display: block;
+        line-height: 30px;
+        text-decoration: none;
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+/** 
+ * Home
+ */
+#home-banner {
+  margin-top: -100px;
+  position: relative;
+  z-index: 1;
+
+  img {
+    display: block;
+  }
+
+  p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 960px;
+    margin-left: -480px;
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 65px;
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+  }
+
+}
+
+#home-word {
+  float: left;
+  width: 100%;
+  margin-bottom: 80px;
+
+  hgroup {
+    margin-bottom: 30px;
+
+    h1 {
+      text-indent: -9999px;
+      width: 928px;
+      height: 38px;
+      background: url(/assets/meet-the-new-word-of-mouth.png);
+      margin: 50px auto 10px;
+    }
+    h2 {
+      font-size: 21px;
+      font-weight: normal;
+      color: #8d8d8d;
+      text-align: center;
+    }
+  }
+
+  section {
+    float: left;
+    width: 224px;
+    margin: 0 60px;
+
+    &.social {
+      margin: 0;
+    }
+
+    img {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    h1, p {
+      padding: 0 10px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+    p {
+      line-height: 24px;
+      font-size: 15px;
+    }
+  }
+}
+
+#home-track {
+  background: url(/assets/home-pattern.png);
+
+  div.light {
+    height: 550px; 
+    background: url(/assets/home-pattern-light.png) no-repeat center center;
+  }
+
+  section.track {
+    padding: 35px 50px;
+    margin-bottom: 60px;
+
+    img {
+      float: left;
+    }
+
+    h1 {
+      margin: 85px 0 12px 410px;
+      text-indent: -9999px;
+      background: url(/assets/track-the-impact.png);
+      width: 446px;
+      height: 27px;
+    }
+    p {
+      font-size: 15px;
+      color: #fff;
+      line-height: 25px;
+      margin: 0 0 17px 410px;
+    }
+    a {
+      display: block;
+      margin-left: 410px;
+      background: #ff6833;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      font-size: 13px;
+      font-weight: bold;
+      color: #fff;
+      width: 90px;
+      line-height: 30px;
+      border-radius: 3px;
+    }
+  }
+
+  div.blocks {
+    float: left;
+    padding-left: 65px;
+
+    section {
+      float: left;
+      margin-right: 20px;
+
+      h1, p {
+        font-size: 15px;
+        color: #fff;
+        line-height: 25px;
+      }
+      h1 {
+        margin-top: -5px;
+      }
+
+      &.tags {
+        width: 240px;
+        padding-left: 50px;
+        background: url(/assets/home-location.png) no-repeat;
+      }
+
+      &.contacts {
+        width: 240px;
+        padding-left: 60px;
+        background: url(/assets/home-contact.png) no-repeat;
+      }
+
+      &.cloud {
+        margin-right: 0;
+        width: 220px;
+        padding-left: 70px;
+        background: url(/assets/home-cloud.png) no-repeat;
+      }
+    }
+  }
+}
