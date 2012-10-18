@@ -15,6 +15,7 @@
 .full {
   float: left;
   width: 100%;
+  min-width: 1200px;
 }
 .center {
   margin: auto;
@@ -224,6 +225,68 @@
         padding-left: 70px;
         background: url(/assets/home-cloud.png) no-repeat;
       }
+    }
+  }
+}
+
+/**
+ * How it works
+ */
+#how-video {
+  padding-top: 40px;
+  text-align: center;
+
+  h1 {
+    margin: 0 auto 30px;
+    text-indent: -9999px;
+    background: url(/assets/snap-tap-and-go.png);
+    width: 462px;
+    height: 54px;
+  }
+  .video {
+    width: 666px;
+    height: 441px;
+    padding: 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    margin: 20px auto 60px;
+    border-radius: 3px;
+  }
+}
+
+#how-blocks {
+  float: left;
+  padding-bottom: 60px;
+
+  section {
+    float: left;
+    margin-right: 20px;
+
+    h1, p {
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    h1 {
+      margin-top: -8px;
+    }
+
+    &.snap {
+      width: 250px;
+      padding-left: 60px;
+      background: url(/assets/how-snap.png) no-repeat;
+    }
+
+    &.tap {
+      width: 260px;
+      padding-left: 50px;
+      background: url(/assets/how-tap.png) no-repeat;
+    }
+
+    &.amplify {
+      width: 250px;
+      padding-left: 70px;
+      background: url(/assets/how-amplify.png) no-repeat;
+      margin-right: 0;
     }
   }
 }
