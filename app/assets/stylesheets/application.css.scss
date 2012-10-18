@@ -233,7 +233,7 @@
  * How it works
  */
 #how-video {
-  padding-top: 40px;
+  padding-top: 60px;
   text-align: center;
 
   h1 {
@@ -250,6 +250,15 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     margin: 20px auto 60px;
     border-radius: 3px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.25s linear;
+    -webkit-transition: opacity 0.25s linear;
+    -moz-transition: opacity 0.25s linear;
+    -o-transition: opacity 0.25s linear;
+  }
+  .video:hover {
+    opacity: 1;
   }
 }
 
