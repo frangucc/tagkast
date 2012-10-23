@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>TN3 Gallery - Video Example</title>
+
+<style type="text/css">
+body {margin:50px 0px; padding:0px; background-color: #000000;color: #ffffff;}
+#content {width:620px; margin:0px auto;}
+#desc {margin:10px; float:left; font-family: Arial, sans-serif; font-size: 12px;}
+</style>
+    
+<!-- include CSS always before including js -->
+<link type="text/css" rel="stylesheet" href="skins/tn3/tn3.css"></link>
+<link type="text/css" rel="stylesheet" href="mediaelement/mediaelementplayer.css" /></code>
+<!-- include jQuery library -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="mediaelement/mediaelement-and-player.js"></script>
+<!-- include tn3 plugin -->
+<script type="text/javascript" src="js/jquery.tn3.min.js"></script>
+<script type="text/javascript" src="js/tn3.picasa.min.js"></script>
+<script type="text/javascript" src="js/tn3.mediaelement.min.js"></script>
+
+<!--  initialize the TN3 when the DOM is ready -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		var tn1 = $('.mygallery').tn3({
+		    skindir:"skins",
+		    height:390,
+		    image:{
+			crop:true
+		    },
+		    thumbnailer: {
+			overMove: false
+		    },
+external:[{
+    origin:"picasa",
+    source: "all",
+    params: {
+	tag:"vegas",
+	isvideo:true
+    },
+    albumInfo: {
+	title:"Vegas",
+	thumb:"images/35x35/1.jpg",
+	description:"PicasaWeb videos tagged with 'vegas'"
+    }
+}],
+content:[{
+    plugin: "mediaelement",
+    options: {
+    }
+}]
+		});
+	});
+</script>
+</head>
+<body>
+    <div id="content">
+    <div class="mygallery">
+	<div class="tn3 album">
+	    <h4>Video/Images Mix</h4>
+	    <div class="tn3 description">Album containing videos and images</div>
+	    <div class="tn3 thumb">images/114x72/3.jpg</div>
+	    <ol>
+		<li>
+		    <h4>TN3 WordPress plugin promotion video</h4>
+		    <div class="tn3 content">
+			<video width="620" height="343" type="video/youtube" src="http://www.youtube.com/watch?v=bdBbMAuXRzM"></video>
+		    </div>		
+		    <a href="">
+			<img src="http://i3.ytimg.com/vi/bdBbMAuXRzM/default.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <h4>Isolated sandy cove</h4>
+		    <div class="tn3 description">Zakynthos island, Greece</div>
+		    <a href="images/2.jpg">
+			<img src="images/35x35/2.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <h4>October at Hathaway Preserve</h4>
+		    <div class="tn3 content">
+			<video width="620" height="343" poster="http://farm7.static.flickr.com/6112/6273158726_cbb12138cf_z.jpg" type="video/mp4" src="http://www.flickr.com/photos/41475189@N02/6273158726/play/site/cbb12138cf/" controls="controls" preload="none"></video>
+		    </div>		
+		    <a href="">
+			<img src="http://farm7.static.flickr.com/6112/6273158726_cbb12138cf_s.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <h4>Taj Mahal mausoleum</h4>
+		    <div class="tn3 description">Agra, India</div>
+		    <a href="images/8.jpg">
+			<img src="images/35x35/8.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <h4>Earth</h4>
+		    <div class="tn3 content">
+			<video width="620" height="343" type="video/youtube" src="http://www.youtube.com/watch?v=thuViaxRd_w"></video>
+		    </div>		
+		    <a href="">
+			<img src="http://i1.ytimg.com/vi/thuViaxRd_w/default.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <h4>Wall of the Jain temple</h4>
+		    <div class="tn3 description">Jaisalmer, India</div>
+		    <a href="images/6.jpg">
+			<img src="images/35x35/6.jpg" />
+		    </a>
+		</li>
+		<li>
+		    <h4>Spring - the movie</h4>
+		    <div class="tn3 content">
+			<video width="620" height="343" poster="http://farm8.static.flickr.com/7107/7054530895_35124a80f0_z.jpg" type="video/mp4" src="http://www.flickr.com/photos/41475189@N02/7054530895/play/site/35124a80f0/" controls="controls" preload="none"></video>
+		    </div>		
+		    <a href="">
+			<img src="http://farm8.static.flickr.com/7107/7054530895_35124a80f0_s.jpg" />
+		    </a>
+		</li>
+	    </ol>
+	</div>
+    </div>
+    <div id="desc">
+    <p>Video Example</p>
+    <p>First album contains videos from YouTube, photos and videos from flickr.</p>
+    <p>The second album, contains videos from PicasaWeb that are tagged with 'vegas'.</p>
+</div></div>
+</body>
+</html>

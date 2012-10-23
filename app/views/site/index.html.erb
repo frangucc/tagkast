@@ -1,13 +1,8 @@
-<script type="text/javascript">
-	
-	$(document).ready(function() {
-	    var tins = new $.fn.tn3.TransitionInspector($("#home-banner"));
-	});
-</script>
 <div class="full" id="home-banner">
-
-	<%= image_tag 'home-banner.jpg', :width => '100%' %>
-
+  <img src="images/home-banner.jpg" />
+  <img src="images/home-banner3.jpg" />
+  <img src="images/home-banner2.jpg" />
+  <img src="images/home-banner4.jpg" />
 </div>
 
 <div class="full">
@@ -71,3 +66,24 @@
   <h1>We're trusted by 100 awesome brands</h1>
   <%= image_tag 'home-brands.png' %>
 </section>
+
+<script>
+  var c = 0;
+
+  $('#home-banner img:gt('+c+')').hide().css('opacity', 0);
+
+  function next() {
+    c = (c + 1) % $('#home-banner img').length;
+
+    $('#home-banner img:visible').animate({
+      opacity: 0
+    }, {
+      complete: function () {
+        $(this).hide();
+        $('#home-banner img:eq('+c+')').show().animate({ opacity: 1 });
+      }
+    });
+  }
+
+  setInterval(next, 3000);
+</script>
