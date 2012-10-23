@@ -25,7 +25,6 @@
 body {
   background: url(/assets/bg-grained.jpg);
 }
-
 #main-header {
   height: 100px;
   position: relative;
@@ -83,29 +82,28 @@ body {
  * Home
  */
 #home-banner {
-  margin-top: -100px;
+  margin-top: -120px;
   position: relative;
   z-index: 1;
-
   img {
     display: block;
   }
 
-  p {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 960px;
-    margin-left: -480px;
-    background: #000;
-    background: rgba(0, 0, 0, 0.5);
-    line-height: 65px;
-    font-size: 21px;
-    color: #fff;
-    text-align: center;
-  }
-
 }
+
+#mast-text {
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   width: 960px;
+   margin-left: -480px;
+   background: #000;
+   background: rgba(0, 0, 0, 0.5);
+   line-height: 65px;
+   font-size: 21px;
+   color: #fff;
+   text-align: center;
+ }
 
 #home-word {
   float: left;
@@ -117,10 +115,11 @@ body {
 
     h1 {
       text-indent: -9999px;
-      width: 928px;
+      width: 769px;
       height: 38px;
-      background: url(/assets/meet-the-new-word-of-mouth.png);
+      background: url(/assets/capture-social.png) no-repeat;
       margin: 50px auto 10px;
+			
     }
     h2 {
       font-size: 21px;
@@ -129,11 +128,15 @@ body {
       text-align: center;
     }
   }
-
+	
+	
   section {
+	
     float: left;
     width: 224px;
-    margin: 0 60px;
+    margin: 0 70px 0 0px;
+position:relative;
+		left:90px;
 
     &.social {
       margin: 0;
