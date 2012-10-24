@@ -11,7 +11,7 @@ ssh_options[:paranoid] = false
 # require 'whenever/capistrano'
 # Load RVM's capistrano plugin.
 # set :normalize_asset_timestamps, false
-# load "deploy/assets"
+load "deploy/assets"
 
 set :rvm_ruby_string, 'ruby-1.9.3-p286'
 set :rvm_type, :user
