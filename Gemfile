@@ -7,6 +7,10 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 gem 'pg'
+gem 'mysql2'
+gem 'capistrano'
+gem 'rvm-capistrano'
+gem 'passenger'
 
 gem 'json'
 
@@ -15,7 +19,7 @@ gem 'json'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
+  gem 'therubyracer', :platforms => :ruby
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
