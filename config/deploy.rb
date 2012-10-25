@@ -31,13 +31,13 @@ role :app, "50.57.94.68"                          # This may be the same as your
 role :db,  "50.57.94.68", :primary => true        # This is where Rails migrations will run
 
 set :user,          "bprasad"
-set :use_sudo,      false
+set :use_sudo,      true
 ssh_options[:forward_agent] = true
 
 task :production do
   set :rails_env,   "production"
   set :application, 'tagkast_production'
-  set :deploy_to,   "/var/www/tagkast/pruduction"
+  set :deploy_to,   "/var/www/tagkast/production"
 end
 
 
