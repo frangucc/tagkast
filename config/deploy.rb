@@ -30,7 +30,7 @@ role :web, "50.57.94.68"                          # Your HTTP server, Apache/Ngi
 role :app, "50.57.94.68"                          # This may be the same as your `Web` server
 role :db,  "50.57.94.68", :primary => true        # This is where Rails migrations will run
 
-set :user,          "fpinto"
+set :user,          "bprasad"
 set :use_sudo,      false
 ssh_options[:forward_agent] = true
 

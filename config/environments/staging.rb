@@ -26,7 +26,7 @@ Gofoto::Application.configure do
   # Specifies the header that your server uses for sending files
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
-  config.action_mailer.default_url_options = { :host => '50.57.94.68:8080' }
+  config.action_mailer.default_url_options = { :host => '50.57.94.68' }
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
@@ -41,7 +41,7 @@ Gofoto::Application.configure do
   # config.cache_store = :mem_cache_store
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server
-  config.action_controller.asset_host = "http://50.57.94.68:8080/"
+  config.action_controller.asset_host = "http://50.57.94.68/"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   # config.assets.precompile += %w( search.js )
