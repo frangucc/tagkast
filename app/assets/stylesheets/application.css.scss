@@ -169,15 +169,41 @@ position:relative;
     height: 550px; 
     background: url(/assets/home-pattern-light.png) no-repeat center center;
   }
-
+	
   section.main {
-    padding: 15px 20px;
+    padding: 25px 20px;
     margin-bottom: 60px;
 
     img {
       float: left;
     }
-
+		h1 {
+		      margin: 85px 0 12px 410px;
+		      text-indent: -9999px;
+		      background: url(/assets/track-the-impact.png);
+		      width: 446px;
+		      height: 27px;
+		    }
+		    p {
+		      font-size: 15px;
+		      color: #fff;
+		      line-height: 25px;
+		      margin: 0 0 17px 410px;
+		    }
+		    a {
+		      display: block;
+		      margin-left: 410px;
+		      background: #ff6833;
+		      text-transform: uppercase;
+		      text-decoration: none;
+		      text-align: center;
+		      font-size: 13px;
+		      font-weight: bold;
+		      color: #fff;
+		      width: 90px;
+		      line-height: 30px;
+		      border-radius: 3px;
+		    }
     
   }
 
@@ -322,8 +348,23 @@ position:relative;
 
 #why-blocks {
   float: left;
-  padding-bottom: 80px;
-
+width:100%;
+  padding: 0px 30px 80px 20px;
+	.left {float:left;
+	.content {
+	margin:0px 20px 0 20px;
+		h1 {font-size:20px;padding:20px 0 20px 0;	}
+		p {font-size:12px;width:350px;line-height:23px;}
+	}
+	}
+	.right {float:left;
+	.content {
+	margin:0px 20px 0 20px;
+		h1 {font-size:20px;padding:20px 0 20px 0;}
+		p {font-size:12px;width:350px;line-height:23px;}
+	}
+	}
+	
   section {
     float: left;
 
@@ -339,21 +380,21 @@ position:relative;
 
     &.influences {
       width: 270px;
-      background: url(/assets/how-snap.png) no-repeat;
+      background: url(/assets/icon-curate.png) no-repeat;
       padding-left: 60px;
     }
 
     &.emotion {
       width: 280px;
-      background: url(/assets/how-tap.png) no-repeat;
+      background: url(/assets/icon-heart.png) no-repeat;
       padding-left: 50px;
     }
 
     &.behaviour {
       width: 260px;
-      background: url(/assets/how-amplify.png) no-repeat;
+      background: url(/assets/icon-drive.png) no-repeat;
       margin-right: 0;
-      padding-left: 70px;
+      padding-left: 60px;
     }
   }
 }
@@ -366,8 +407,8 @@ position:relative;
   hgroup h1 {
     text-indent: -9999px;
     background: url(/assets/turn-key-tech-nology.png);
-    width: 602px;
-    height: 68px;
+    width: 612px;
+    height: 73px;
     margin: 50px auto 30px;
   }
 
@@ -440,6 +481,90 @@ position:relative;
 
 }
 
+#tech-track {
+  background: url(/assets/home-pattern.png);
+
+  div.light {
+    height: 550px; 
+    background: url(/assets/home-pattern-light.png) no-repeat center center;
+  }
+	
+  section.main {
+    padding: 45px 20px;
+    margin-bottom: 60px;
+
+    img {
+      float: left;
+    }
+		h1 {
+		      margin: 85px 0 12px 410px;
+		      text-indent: -9999px;
+		      background: url(/assets/track-the-impact.png);
+		      width: 446px;
+		      height: 27px;
+		    }
+		    p {
+		      font-size: 15px;
+		      color: #fff;
+		      line-height: 25px;
+		      margin: 0 0 17px 410px;
+		    }
+		    a {
+		      display: block;
+		      margin-left: 410px;
+		      background: #ff6833;
+		      text-transform: uppercase;
+		      text-decoration: none;
+		      text-align: center;
+		      font-size: 13px;
+		      font-weight: bold;
+		      color: #fff;
+		      width: 90px;
+		      line-height: 30px;
+		      border-radius: 3px;
+		    }
+    
+  }
+
+  div.blocks {
+    float: left;
+    padding-left: 65px;
+
+    section {
+      float: left;
+      margin-right: 20px;
+
+      h1, p {
+        font-size: 15px;
+        color: #fff;
+        line-height: 25px;
+      }
+      h1 {
+        margin-top: -5px;
+      }
+
+      &.tags {
+        width: 240px;
+        padding-left: 50px;
+        background: url(/assets/home-location.png) no-repeat;
+      }
+
+      &.contacts {
+        width: 240px;
+        padding-left: 60px;
+        background: url(/assets/home-contact.png) no-repeat;
+      }
+
+      &.cloud {
+        margin-right: 0;
+        width: 220px;
+        padding-left: 70px;
+        background: url(/assets/home-cloud.png) no-repeat;
+      }
+    }
+  }
+}
+
 /**
  * Clients
  */
@@ -454,7 +579,7 @@ position:relative;
 #clients-left {
   float: left;
   width: 424px;
-  margin-left: 50px;
+  margin-left: -30px;
   margin-bottom: 60px;
 
   img {
