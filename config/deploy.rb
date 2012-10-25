@@ -6,7 +6,7 @@ require "rvm/capistrano"
 
 set :stages, %w(staging production)
 set :default_stage, "staging"
-ssh_options[:paranoid] = false 
+ssh_options[:paranoid] = false
 
 # require 'whenever/capistrano'
 # Load RVM's capistrano plugin.
@@ -30,14 +30,14 @@ role :web, "50.57.94.68"                          # Your HTTP server, Apache/Ngi
 role :app, "50.57.94.68"                          # This may be the same as your `Web` server
 role :db,  "50.57.94.68", :primary => true        # This is where Rails migrations will run
 
-set :user,          "fpinto"
+set :user,          "bprasad"
 set :use_sudo,      true
 ssh_options[:forward_agent] = true
 
 task :production do
   set :rails_env,   "production"
   set :application, 'tagkast_production'
-  set :deploy_to,   "/var/www/tagkast/pruduction"
+  set :deploy_to,   "/var/www/tagkast/production"
 end
 
 
@@ -56,7 +56,7 @@ namespace :deploy do
   end
 
   task :seed, :roles => :db do
-    run("cd #{deploy_to}/current && /usr/local/bin/rake db:seed RAILS_ENV=#{rails_env}")  
+    run("cd #{deploy_to}/current && /usr/local/bin/rake db:seed RAILS_ENV=#{rails_env}")
   end
 
   namespace :assets do
@@ -68,16 +68,16 @@ namespace :deploy do
         logger.info "Skipping asset pre-compilation because there were no asset changes"
       end
     end
-  end  
+  end
 
 end
 
 
-desc "Run a task on a remote server. cap staging rake:invoke task=blah"  
-# run like: cap staging invoke_rake task=a_certain_task  
+desc "Run a task on a remote server. cap staging rake:invoke task=blah"
+# run like: cap staging invoke_rake task=a_certain_task
 task :invoke_rake do
-  run("cd #{deploy_to}/current && /usr/local/bin/rake #{ENV['task']} RAILS_ENV=#{rails_env}")  
-end  
+  run("cd #{deploy_to}/current && /usr/local/bin/rake #{ENV['task']} RAILS_ENV=#{rails_env}")
+end
 
 
 task :symlink_database_and_system_folder do
@@ -91,3 +91,4 @@ before  "deploy:assets:precompile",     "symlink_database_and_system_folder"
 ##after "deploy:stop",    "delayed_job:stop"
 #after "deploy:start",   "rake:recompile_assest"
 #after "deploy:restart", "rake:recompile_assest"
+
