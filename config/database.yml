@@ -1,5 +1,5 @@
 database: &DATABASE
-  adapter: mysql2
+  adapter: sqlite3
   encoding: utf8
   host: localhost
   timeout: 5000

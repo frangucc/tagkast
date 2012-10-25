@@ -34,11 +34,11 @@ body {
 
   #logo {
     float: left;
-    padding: 27px 0 0 35px;
+    padding: 12px 0 0 20px;
   }
 
   nav {
-    float: right;
+    float: left;
     padding: 35px 30px 0 0;
 
     li {
@@ -116,8 +116,8 @@ body {
     h1 {
       text-indent: -9999px;
       width: 769px;
-      height: 38px;
-      background: url(/assets/capture-social.png) no-repeat;
+      height: 58px;
+      background: url(/assets/instant-social-broadcasting.png) no-repeat;
       margin: 50px auto 10px;
 			
     }
@@ -170,41 +170,15 @@ position:relative;
     background: url(/assets/home-pattern-light.png) no-repeat center center;
   }
 
-  section.track {
-    padding: 35px 50px;
+  section.main {
+    padding: 15px 20px;
     margin-bottom: 60px;
 
     img {
       float: left;
     }
 
-    h1 {
-      margin: 85px 0 12px 410px;
-      text-indent: -9999px;
-      background: url(/assets/track-the-impact.png);
-      width: 446px;
-      height: 27px;
-    }
-    p {
-      font-size: 15px;
-      color: #fff;
-      line-height: 25px;
-      margin: 0 0 17px 410px;
-    }
-    a {
-      display: block;
-      margin-left: 410px;
-      background: #ff6833;
-      text-transform: uppercase;
-      text-decoration: none;
-      text-align: center;
-      font-size: 13px;
-      font-weight: bold;
-      color: #fff;
-      width: 90px;
-      line-height: 30px;
-      border-radius: 3px;
-    }
+    
   }
 
   div.blocks {
