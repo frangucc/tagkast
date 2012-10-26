@@ -296,8 +296,8 @@ body {
   h1 {
     margin: 0 auto 30px;
     text-indent: -9999px;
-    background: url(/assets/snap-tap-and-go.png);
-    width: 462px;
+    background: url(/assets/snap-tap.png) no-repeat;
+    width: 512px;
     height: 54px;
   }
   .video {
@@ -429,14 +429,18 @@ width:100%;
 /**
  * Technology
  */
+#solutions-bottom {
+margin-left:25px;
+}
+
 #tech-banner {
 
   hgroup h1 {
     text-indent: -9999px;
-    background: url(/assets/turn-key-tech-nology.png);
-    width: 612px;
-    height: 73px;
-    margin: 50px auto 30px;
+    background: url(/assets/turn-key-tech-nology.png) no-repeat;
+    width: 512px;
+    height: 76px;
+    margin: 60px auto 10px;
   }
 
   ul.handles {
@@ -597,8 +601,8 @@ width:100%;
  */
 #clients-title {
   text-indent: -9999px;
-  background: url(/assets/we-started-with-a-whisper.png);
-  width: 985px;
+  background: url(/assets/love-what-we-do.png) no-repeat;
+  width: 745px;
   height: 47px;
   margin: 50px auto 20px;
 }
