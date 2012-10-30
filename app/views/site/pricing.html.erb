@@ -2,15 +2,21 @@
   <div class="center">
 
     <div id="pricing-form">
+      <% if flash.any? %>
+        <% flash.each do |k,v| %>
+          <div class="alert <%= (k.to_s == 'notice')? 'alert-info': 'alert-danger alert-error' %> fade in"><%= v %>
+            <span class="close">x</span>
+          </div>
+        <% end %>
+      <% end %>
+
       <h1>Contact us for pricing</h1>
-      <form>
-
-        <input class="name" />
-        <input class="email" />
-        <input class="what" />
-        <input class="submit" type="submit" value="Submit" />
-
-      </form>
+        <%= form_tag("/pricing", :method => :post) do %>
+        <%= text_field_tag 'name', nil, :class => 'name' %>
+        <%= text_field_tag 'email', nil, :class => 'email' %>
+        <%= text_field_tag 'what', nil, :class => 'what' %>
+        <input class="submit" type="submit" value="Submit"/>
+      <% end %>
     </div>
 
     <div id="pricing-info">
@@ -43,4 +49,9 @@
         $(this).addClass('focus');
       }
     });
+  $(".alert").click(function(){
+    $(this).fadeOut();
+  });
+
 </script>
+
