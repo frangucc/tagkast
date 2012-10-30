@@ -1,9 +1,13 @@
 <div class="full">
   <div class="center">
 
-    <div id="why-reasons">
-      <h1>We've got over a million reasons</h1>
-      <%= image_tag 'why-middle.png' %>
+    <div id="why-video">
+      <h1>Snap, Tap and Go</h1>
+
+
+      <div class="video">
+        <iframe src="http://player.vimeo.com/video/52444803?badge=0" width="666" height="441" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+      </div>
     </div>
 
     <div id="why-blocks">
@@ -20,6 +24,18 @@
         <p>Use data collected to drive desirable behavior. Social endorsements start a conversation about your product.</p>
       </section>
     </div>
-
+   
   </div>
+  
 </div>
+
+<script>
+  $('#how-video .video img').click(function () {
+    var $this = $(this)
+      , parent = $this.parent()
+      , iframe = parent.find('iframe');
+
+    $this.hide();
+    iframe.show().appendTo(parent);
+  });
+</script>
