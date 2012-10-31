@@ -15,6 +15,9 @@ class SiteController < ApplicationController
   def clients
   end
 
+  def terms
+  end
+
   def pricing
     if request.post?
       missing = []

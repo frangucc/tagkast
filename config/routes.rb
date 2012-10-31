@@ -5,6 +5,7 @@ Gofoto::Application.routes.draw do
   match 'technology' => 'site#technology', :as => 'technology'
   match 'clients' => 'site#clients'
   match 'pricing' => 'site#pricing'
+  match 'terms' => 'site#terms'
 
   root :to => 'site#index'
 
