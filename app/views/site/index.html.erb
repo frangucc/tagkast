@@ -3,8 +3,6 @@
   <img src="images/home-banner2.jpg" width="100%" />
   <img src="images/home-banner3.jpg" width="100%" />
   <img src="images/home-banner4.jpg" width="100%" />
-	<img src="images/home-banner5.jpg" width="100%" />
-	<img src="images/home-banner6.jpg" width="100%" />
 	<img src="images/home-banner7.jpg" width="100%" />
 <div class="colorstrip">
 </div>
@@ -37,7 +35,20 @@
         <p>These branded photos post to the profile pages of your guest, creating viral photos that double as advertisements.</p>
       </section>
 
+      <section class="video-wrapper">
+        <div class="statement">
+          <div class="heading">Can't Read? Watch this video.</div>
+          <div class="sub-heading">Tagkast works wherever there is a crowd. Rallies, conferences, theme parks, parties and restaurants. </div>
+        </div>
+        <div class="video">
+          <%= image_tag 'how-video.png' %>
+          <iframe style="display: none" width="566" height="341" src="http://www.youtube.com/embed/WQJbMiAQ9mA?showinfo=0&autoplay=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
+
+
     </section>
+
 
   </div>
 </div>
@@ -45,7 +56,7 @@
 <section id="home-track" class="full">
   <div class="light center">
     <section class="main">
-      <%= image_tag 'home-track2.png' %>
+      <%= image_tag 'home-text.png' %>
      </section>
     </div>
   </div>
@@ -75,4 +86,16 @@
   }
 
   setInterval(next, 7000);
+</script>
+<script>
+  $('.video-wrapper .video img').click(function () {
+    
+    var $this = $(this)
+      , parent = $this.parent()
+      , iframe = parent.find('iframe');
+
+    $this.hide();
+    iframe.show().appendTo(parent);
+
+  });
 </script>

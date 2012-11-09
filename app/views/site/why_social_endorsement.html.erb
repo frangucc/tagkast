@@ -1,41 +1,29 @@
-<div class="full">
-  <div class="center">
-
-    <div id="why-video">
-      <h1>Snap, Tap and Go</h1>
-
-
-      <div class="video">
-        <iframe src="http://player.vimeo.com/video/52444803?badge=0" width="666" height="441" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
-      </div>
-    </div>
-
-    <div id="why-blocks">
-      <section class="influences">
-        <h1>Create the Influences</h1>
-        <p>Recommendations from friends are more trustworthy than paid ads.</p>
-      </section>
-      <section class="emotion">
-        <h1>Own the Emotion</h1>
-        <p>Associate your identity with the fabulous moments captured in thousands of classic photos - authentically.</p>
-      </section>
-      <section class="behaviour">
-        <h1>Drive Behavior</h1>
-        <p>Use data collected to drive desirable behavior. Social endorsements start a conversation about your product.</p>
-      </section>
-    </div>
-   
-  </div>
-  
+<div class="full" id="home-banner">
+  <img src="images/why.png" width="100%" />
 </div>
 
-<script>
-  $('#how-video .video img').click(function () {
-    var $this = $(this)
-      , parent = $this.parent()
-      , iframe = parent.find('iframe');
+<div id="why-page">
+<section class="body">
+<%= image_tag 'why-content.png' %>
+</section>
+</div>
 
-    $this.hide();
-    iframe.show().appendTo(parent);
-  });
-</script>
+<section id="home-track" class="full">
+  <div class="light center">
+    <section class="main">
+      <%= image_tag 'why-body.png' %>
+     </section>
+    </div>
+  </div>
+</section>
+
+<div id="why-page">
+<section class="body">
+
+<%= image_tag 'why-footer.png' %>
+</section>
+</div>
+<div class="full">
+</div>
+<div class="colorstrip">
+</div>

@@ -16,15 +16,14 @@
       <nav>
         <ul>
           <li class="pricing<% if params[:action] == 'pricing' %> active<% end %>">
-            <%= link_to 'Pricing', pricing_path %></li>
+            <%= link_to 'Pricing & Solutions', pricing_path %></li>
+
           <li class="clients<% if params[:action] == 'clients' %> active<% end %>">
-            <%= link_to 'Clients', clients_path %></li>
-          <li class="technology<% if params[:action] == 'technology' %> active<% end %>">
-            <%= link_to 'Solutions', technology_path %></li>
+            <%= link_to "Who's using Tagkast?", clients_path %></li>
+          
           <li class="why<% if params[:action] == 'why_social_endorsement' %> active<% end %>">
             <%= link_to 'Why TagKast', why_social_endorsement_path %></li>
-          <li class="how<% if params[:action] == 'how_it_works' %> active<% end %>">
-            <%= link_to 'How It Works', how_it_works_path %></li>
+          
         </ul>
       </nav>
 
